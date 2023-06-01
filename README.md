@@ -1,4 +1,4 @@
-# Phase 2 Project
+# King County Housing Data Project
 
 ## Overview
 
