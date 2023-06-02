@@ -33,7 +33,7 @@ I then try to log transform the target variable to see if that improves its dist
 ![Log-transformed Price Histogram](Images/pricehist_log.png)
 The log-transformed histogram of price looks more normal than the original variable's distribution.
 
-![Log-transformed Price QQ plot](Images/priceqq_log.png)
+![Log-transformed Price QQ plot](Images/priceqq_log)
 
 This QQ plot is still not perfectly linear but is it better than before we log-transformed the target.
 The data is still only reliable within the same same, so it likely is not worthwhile to use the log-transformed target feature moving forward as it will be harder to interpret.
@@ -60,7 +60,7 @@ Paying more attention to which variables are correlated with price, as opposed t
 
 Of the numeric variables in the data, aside from those already removed, it looks like the feature most correlated with price and having the strongest linear relationship with price is sqft_living. Therefore, this seems like a good feature to use for the baseline model.
 
-[!sqft_living scatter plot](Images/sqft_living_scatter.png)
+![sqft_living scatter plot](Images/sqft_living_scatter.png)
 
 The numeric variable here that appears to have the strongest positive linear relationship with price is sqft_living. As the feature most correlated with price and the one with the strongest linear relationship, sqft_living seems to  be a good variable to build a baseline model with to then compare other variables to.
 
@@ -83,13 +83,13 @@ First, a baseline model is created using the variable sqft_living, as it is the 
 
 To further visualize these results, I plot the actual vs. predicted values for this model, the regression line, and the residuals.
 ###### Actuals vs. Predicted values:
-![sqft_living actuals vs.predicted](Images/sqft_living_actvspred)
+![sqft_living actuals vs.predicted](Images/sqft_living_actvspred.png)
 
 ###### The Regression Line:
-![sqft_living Regression Line](Images/sqft_living_regline)
+![sqft_living Regression Line](Images/sqft_living_regline.png)
 
 ###### The Residuals:
-![sqft_living Residuals](Images/sqft_living_resids)
+![sqft_living Residuals](Images/sqft_living_resids.png)
 
 
 #### Numeric data:
