@@ -16,9 +16,9 @@ Next, I try to find out more about the data and narrow down the dataframe I will
 
 Before I look at the predictors, I want to investigate the target variable ("price"). I start by plotting the target variable's distribution with a histogram and its residuals with a QQ plot. 
 
-<img src="Images/pricehist_orig" alt="Untransformed Price Histogram" Style="height: 300px; width: 600px;">
+<img src="Images/pricehist_orig.png" alt="Untransformed Price Histogram" Style="height: 300px; width: 600px;">
 
-<img src="Images/priceqq_orig" alt="Untransformed Price QQ plot" Style="height: 300px; width: 600px;">
+<img src="Images/priceqq_orig.png" alt="Untransformed Price QQ plot" Style="height: 300px; width: 600px;">
 
 The histogram does not seem to show a perfectly normal looking distribution, and the QQ plot shows the residuals getting further and further away from the theoretical fit line. 
 
@@ -56,7 +56,7 @@ This model is statistically significant and explains about 37% of the variance i
 
 I then add the other numeric features to a multiple linear regression to see if it improves our model.
 
-<img src="Images/partregressplot.png" alt="Partial Regression Model" Style="height: 350px; width: 800px;">
+<img src="Images/partregressplot.png" alt="Partial Regression Model" Style="height: 300px; width: 850px;">
 
 These models look worse, so likely we included too many features. Since the numeric features of sqft_lot, and floors do not appear to have a positive linear relationship with price, we will remove those features.
 
@@ -98,10 +98,12 @@ For a house with no view, we see an associated decrease in price of about 182,40
 ### MAE for interpretability of models:
 
 mae of baseline = 396335.99
+
 Our baseline model is off by about $396,336 in a given prediction.
 
 ##### MAE for multiple linear regression models:
 mae (first multiple linear regression model) = 388646.60
+
 Our interaction model is off by about $384,550 in a given prediction. This is still high, but it is better than our baseline model.
 
 ## Conclusion
