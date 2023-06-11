@@ -31,7 +31,7 @@ Next, I want to know which variables are most correlated with price, so that I c
 However, first I want to make sure that if any features are causing multicollinearity, that they are removed so that they will not later affect my results.
 I do this by comparing all the features' correlations to see if any features are highly correlated with each other.
 
-<img src="Images/corrheatmap.png" alt="Correlations heatmap" Style="height: 300px; width: 600px;">
+<img src="Images/corrheatmap.png" alt="Correlations heatmap" Style="height: 400px; width: 800px;">
 
 
 <p>The only pairs of features that have correlations higher than 0.75 (high correlations) are sqft_living and sqft_above, and sqft_living and bathrooms. This makes sense, because the square feet of the living area is likely a large portion of the square feet above ground for a house. </p>
