@@ -16,9 +16,9 @@ Next, I try to find out more about the data and narrow down the dataframe I will
 
 Before I look at the predictors, I want to investigate the target variable ("price"). I start by plotting the target variable's distribution with a histogram and its residuals with a QQ plot. 
 
-<img src="Images/pricehist_orig.jpeg" alt="Untransformed Price Histogram" Style="height: 300px; width: 600px;">
+<img src="Images/pricehist_orig" alt="Untransformed Price Histogram" Style="height: 300px; width: 600px;">
 
-<img src="Images/priceqq_orig.jpeg" alt="Untransformed Price QQ plot" Style="height: 300px; width: 600px;">
+<img src="Images/priceqq_orig" alt="Untransformed Price QQ plot" Style="height: 300px; width: 600px;">
 
 The histogram does not seem to show a perfectly normal looking distribution, and the QQ plot shows the residuals getting further and further away from the theoretical fit line. 
 
@@ -31,7 +31,7 @@ Next, I want to know which variables are most correlated with price, so that I c
 However, first I want to make sure that if any features are causing multicollinearity, that they are removed so that they will not later affect my results.
 I do this by comparing all the features' correlations to see if any features are highly correlated with each other.
 
-<img src="Images/corrheatmap.jpeg" alt="Correlations heatmap" Style="height: 300px; width: 600px;">
+<img src="Images/corrheatmap.png" alt="Correlations heatmap" Style="height: 300px; width: 600px;">
 
 
 <p>The only pairs of features that have correlations higher than 0.75 (high correlations) are sqft_living and sqft_above, and sqft_living and bathrooms. This makes sense, because the square feet of the living area is likely a large portion of the square feet above ground for a house. </p>
@@ -43,7 +43,7 @@ Because sqft_living is the most correlated with the target variable out of these
 
 Paying more attention to which variables are correlated with price, as opposed to with each other, I compare the rest of the relevant numeric features.
 
-<img src="Images/numscatters.jpeg" alt="numeric data scatter plots" Style="height: 300px; width: 600px;">
+<img src="Images/numscatters.png" alt="numeric data scatter plots" Style="height: 300px; width: 600px;">
 
 
 ## Modeling
@@ -56,7 +56,7 @@ This model is statistically significant and explains about 37% of the variance i
 
 I then add the other numeric features to a multiple linear regression to see if it improves our model.
 
-<img src="Images/partregressplot.png" alt="Partial Regression Model" Style="height: 300px; width: 600px;">
+<img src="Images/partregressplot.png" alt="Partial Regression Model" Style="height: 350px; width: 800px;">
 
 These models look worse, so likely we included too many features. Since the numeric features of sqft_lot, and floors do not appear to have a positive linear relationship with price, we will remove those features.
 
@@ -94,12 +94,6 @@ For a house with a good view, we see an associated increase in price of about 88
 For a house with a fair view, we see an associated increase in price of about 225,900 dollars.
 For a house with no view, we see an associated decrease in price of about 182,400 dollars.
 
-<img src="Images/mlractpred1.png" alt="MLR Actuals vs Pred1." Style="height: 300px; width: 600px;">
-<img src="Images/mlractpred2.png" alt="MLR Actuals vs Pred2." Style="height: 300px; width: 600px;">
-
-<img src="Images/mlrregplot.png" alt="MLR Regplot" Style="height: 300px; width: 600px;">
-
-<img src="Images/mlrresids.png" alt="MLR Resids" Style="height: 300px; width: 600px;">
 
 ### MAE for interpretability of models:
 
