@@ -1,6 +1,6 @@
 # King County Housing Data Project
 
-<img src="Images/houseflip2.jpeg" alt="House Flip" Style="height: 300px; width: 600px;">
+<img src="Images/houseflip2.jpeg" alt="House Flip" Style="height: 400px; width: 800px;">
 
 ## Overview
 
@@ -16,9 +16,9 @@ Next, I try to find out more about the data and narrow down the dataframe I will
 
 Before I look at the predictors, I want to investigate the target variable ("price"). I start by plotting the target variable's distribution with a histogram and its residuals with a QQ plot. 
 
-<img src="Images/pricehist_orig.png" alt="Untransformed Price Histogram" Style="height: 300px; width: 600px;">
+<img src="Images/pricehist_orig.png" alt="Untransformed Price Histogram" Style="height: 400px; width: 800px;">
 
-<img src="Images/priceqq_orig.png" alt="Untransformed Price QQ plot" Style="height: 300px; width: 600px;">
+<img src="Images/priceqq_orig.png" alt="Untransformed Price QQ plot" Style="height: 400px; width: 800px;">
 
 The histogram does not seem to show a perfectly normal looking distribution, and the QQ plot shows the residuals getting further and further away from the theoretical fit line. 
 
@@ -43,7 +43,7 @@ Because sqft_living is the most correlated with the target variable out of these
 
 Paying more attention to which variables are correlated with price, as opposed to with each other, I compare the rest of the relevant numeric features.
 
-<img src="Images/numscatters.png" alt="numeric data scatter plots" Style="height: 300px; width: 600px;">
+<img src="Images/numscatters.png" alt="numeric data scatter plots" Style="height: 400px; width: 1000px;">
 
 
 ## Modeling
@@ -118,4 +118,4 @@ This dataset does not include information on certain housing features that would
 ### Next Steps:
 Further analysis should be conducted on more datasets that include more features, such as housing subdivision.
 
-<img src="Images/kingcountyprices.png" alt="housing subdivisions" Style="height: 450px; width: 700px;">
+<img src="Images/kingcountyprices.png" alt="housing subdivisions" Style="height: 600px; width: 750px;">
