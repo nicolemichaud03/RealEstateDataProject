@@ -1,6 +1,6 @@
 # King County Housing Data Project
 
-<img src="Images/houseflip.jpeg" alt="House Flip" Style="height: 400px; width: 800px;">
+<img src="Images/houseflip.png" alt="House Flip" Style="height: 400px; width: 800px;">
 
 ## Overview
 
