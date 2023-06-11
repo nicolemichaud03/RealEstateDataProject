@@ -56,7 +56,7 @@ This model is statistically significant and explains about 37% of the variance i
 
 I then add the other numeric features to a multiple linear regression to see if it improves our model.
 
-<img src="Images/partregressplot.png" alt="Partial Regression Model" Style="height: 300px; width: 850px;">
+<img src="Images/partregressplot.png" alt="Partial Regression Model" Style="height: 400px; width: 1000px;">
 
 These models look worse, so likely we included too many features. Since the numeric features of sqft_lot, and floors do not appear to have a positive linear relationship with price, we will remove those features.
 
