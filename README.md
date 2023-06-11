@@ -1,6 +1,6 @@
 # King County Housing Data Project
 
-<img src="Images/houseflip2.jpeg" alt="House Flip" Style="height: 400px; width: 800px;">
+<img src="Images/houseflip.jpeg" alt="House Flip" Style="height: 400px; width: 800px;">
 
 ## Overview
 
@@ -18,7 +18,7 @@ Before I look at the predictors, I want to investigate the target variable ("pri
 
 <img src="Images/pricehist_orig.png" alt="Untransformed Price Histogram" Style="height: 400px; width: 800px;">
 
-<img src="Images/priceqq_orig.png" alt="Untransformed Price QQ plot" Style="height: 400px; width: 800px;">
+<img src="Images/priceqq_orig.png" alt="Untransformed Price QQ plot" Style="height: 400px; width: 750px;">
 
 The histogram does not seem to show a perfectly normal looking distribution, and the QQ plot shows the residuals getting further and further away from the theoretical fit line. 
 
